@@ -1,2 +1,2 @@
-# My-Reddit_server
-A personnal reddit-like app
+# My-Reddit-App
+A personnal Reddit-like app
