@@ -7,6 +7,9 @@ const main = async () => {
   const orm = await MikroORM.init(mikroConfig)
 
   const post = orm.em.create(Post, {title: 'my first post'})
+  await orm.em.persistAndFlush(post)
 }
 
-main()
+main().catch(err => {
+  console.error(err)
+})

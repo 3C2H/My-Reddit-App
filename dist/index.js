@@ -18,6 +18,9 @@ const mikro_orm_config_1 = __importDefault(require("./mikro-orm.config"));
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     const orm = yield core_1.MikroORM.init(mikro_orm_config_1.default);
     const post = orm.em.create(Post_1.Post, { title: 'my first post' });
+    yield orm.em.persistAndFlush(post);
 });
-main();
+main().catch(err => {
+    console.error(err);
+});
 //# sourceMappingURL=index.js.map

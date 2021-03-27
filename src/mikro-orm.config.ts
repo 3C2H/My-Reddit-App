@@ -11,8 +11,10 @@ export default {
     },
 
     entities: [Post],
-    dbName: 'myreddit',
+    dbName: 'postgres',
     type: 'postgresql',
     user: 'postgres',
+    // password:'w1lder&ccx',
+    // aabb
     debug: !__prod__,
 } as Parameters<typeof MikroORM.init>[0];

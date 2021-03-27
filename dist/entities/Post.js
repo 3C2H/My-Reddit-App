@@ -14,7 +14,7 @@ const core_1 = require("@mikro-orm/core");
 let Post = class Post {
     constructor() {
         this.createdAt = new Date();
-        this.updatedAt = new Date;
+        this.updatedAt = new Date();
     }
 };
 __decorate([
