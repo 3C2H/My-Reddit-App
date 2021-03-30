@@ -6,3 +6,5 @@ start DEV env :
 terminal - 1 = yarn watch
 terminal - 2 = yarn dev
 /* * * * */
+
+Timer 00:23:26
